@@ -1,0 +1,21 @@
+{
+  "name": "prisma-d1-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "next-exec -- tsx src",
+    "prisma:migrate": "prisma migrate dev && next-exec -- tsx tools/migrate.ts && prisma generate --no-engine"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.3",
+    "next-exec": "^1.0.0",
+    "prisma": "^5.12.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3",
+    "wrangler": "^3.44.0"
+  }
+}
