@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client/edge";
 
 const formatNumber = (num: number) => {
   return num.toString().padStart(2, "0");
